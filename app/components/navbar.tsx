@@ -1,13 +1,12 @@
 "use client";
 
 import Link from 'next/link'
-import { useRouter, usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import { Code2, ChevronDown, List, FileText, GitCompare, Sparkles, Table, Database } from 'lucide-react'
 import { ThemeToggle } from './theme-provider'
 
 export function Navbar() {
-  const router = useRouter();
   const pathname = usePathname();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
