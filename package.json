@@ -11,13 +11,21 @@
   "dependencies": {
     "lucide-react": "^0.460.0",
     "next": "15.0.3",
+    "papaparse": "^5.5.3",
     "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106"
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-json-tree": "^0.20.0",
+    "react-json-view": "^1.21.3",
+    "react-table": "^7.8.0",
+    "sql-formatter": "^15.6.6",
+    "sql.js": "^1.13.0"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/papaparse": "^5.3.16",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-table": "^7.7.20",
     "eslint": "^8",
     "eslint-config-next": "15.0.3",
     "postcss": "^8",

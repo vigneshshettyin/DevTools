@@ -1,0 +1,11 @@
+name,age,email,city,occupation,salary
+John Doe,30,john@example.com,New York,Developer,75000
+Jane Smith,28,jane@example.com,San Francisco,Designer,65000
+Mike Johnson,35,mike@example.com,Chicago,Manager,85000
+Sarah Wilson,32,sarah@example.com,Boston,Analyst,70000
+David Brown,29,david@example.com,Seattle,Engineer,80000
+Lisa Davis,31,lisa@example.com,Austin,Developer,72000
+Tom Miller,33,tom@example.com,Denver,Designer,68000
+Amy Garcia,27,amy@example.com,Portland,Analyst,65000
+Chris Lee,34,chris@example.com,Atlanta,Manager,90000
+Emma Taylor,26,emma@example.com,Miami,Engineer,75000 
