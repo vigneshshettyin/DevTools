@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { List, FileText, GitCompare, Sparkles, Table, Database } from "lucide-react";
+import { List, FileText, GitCompare, Sparkles, Table, Database, Code, Globe } from "lucide-react";
 import { AnimatedBackground } from "./components/animated-background";
 
 export default function Home() {
@@ -45,6 +45,20 @@ export default function Home() {
       description: "Format SQL queries and analyze execution flow",
       icon: <Database className="w-6 h-6" />,
       href: "/tools/sql-beautify",
+    },
+    {
+      id: "code-playground",
+      name: "Code Playground",
+      description: "Write HTML, CSS, and JavaScript with real-time preview",
+      icon: <Code className="w-6 h-6" />,
+      href: "/tools/code-playground",
+    },
+    {
+      id: "api-tester",
+      name: "API Tester",
+      description: "Test APIs with all HTTP methods, headers, and body types",
+      icon: <Globe className="w-6 h-6" />,
+      href: "/tools/api-tester",
     },
   ];
 

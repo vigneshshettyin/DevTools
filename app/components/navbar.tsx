@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import { Code2, ChevronDown, List, FileText, GitCompare, Sparkles, Table, Database } from 'lucide-react'
+import { Code2, ChevronDown, List, FileText, GitCompare, Sparkles, Table, Database, Code, Globe } from 'lucide-react'
 import { ThemeToggle } from './theme-provider'
 
 export function Navbar() {
@@ -47,7 +47,18 @@ export function Navbar() {
       icon: <Database className="w-4 h-4" />,
       href: "/tools/sql-beautify",
     },
-
+    {
+      id: "code-playground",
+      name: "Code Playground",
+      icon: <Code className="w-4 h-4" />,
+      href: "/tools/code-playground",
+    },
+    {
+      id: "api-tester",
+      name: "API Tester",
+      icon: <Globe className="w-4 h-4" />,
+      href: "/tools/api-tester",
+    },
   ];
 
   const getCurrentTool = () => {
