@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Navbar } from "./components/navbar";
+import { Footer } from "./components/footer";
 import { ThemeProvider } from "./components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -50,10 +51,11 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
-      <body className={`${inter.className} bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors`}>
+      <body className={`${inter.className} bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors min-h-screen flex flex-col`}>
         <ThemeProvider>
           <Navbar />
-          <main className="container mx-auto px-4 py-8">{children}</main>
+          <main className="flex-1 container mx-auto px-4 py-8">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
