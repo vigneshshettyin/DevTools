@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
-import { Code2, ChevronDown, List, FileText, GitCompare, Sparkles, Table, Database, Code, Globe } from 'lucide-react'
+import { Code2, ChevronDown, List, FileText, GitCompare, Sparkles, Table, Database, Code, Globe, Palette } from 'lucide-react'
 import { ThemeToggle } from './theme-provider'
 
 export function Navbar() {
@@ -58,6 +58,12 @@ export function Navbar() {
       name: "API Tester",
       icon: <Globe className="w-4 h-4" />,
       href: "/tools/api-tester",
+    },
+    {
+      id: "diagram",
+      name: "Diagram Creator",
+      icon: <Palette className="w-4 h-4" />,
+      href: "/tools/diagram",
     },
   ];
 

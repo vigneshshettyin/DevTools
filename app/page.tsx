@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { List, FileText, GitCompare, Sparkles, Table, Database, Code, Globe } from "lucide-react";
+import { List, FileText, GitCompare, Sparkles, Table, Database, Code, Globe, Palette } from "lucide-react";
 import { AnimatedBackground } from "./components/animated-background";
 
 export default function Home() {
@@ -59,6 +59,13 @@ export default function Home() {
       description: "Test APIs with all HTTP methods, headers, and body types",
       icon: <Globe className="w-6 h-6" />,
       href: "/tools/api-tester",
+    },
+    {
+      id: "diagram",
+      name: "Diagram Creator",
+      description: "Create diagrams and flowcharts with drawing tools",
+      icon: <Palette className="w-6 h-6" />,
+      href: "/tools/diagram",
     },
   ];
 
